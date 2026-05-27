@@ -200,7 +200,7 @@ cc.Class({
             }
         }
         // Fallback: try loading from resources
-        cc.loader.loadRes('sounds/' + soundName, cc.AudioClip, function (err, clip) {
+        cc.loader.loadRes('audio/' + soundName, cc.AudioClip, function (err, clip) {
             if (!err && clip) {
                 cc.audioEngine.playEffect(clip, false);
             }
